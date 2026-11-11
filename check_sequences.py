@@ -18,7 +18,7 @@ ws = wb['Scaled Scores']
 for column, end_row in SEQUENCES:
     print(f'Looking at column {column} rows 5 - {end_row}')
     value = 0
-    for row_number in range(5,end_row):
+    for row_number in range(5,end_row+1):
         #print(f'{column}-{row_number}')
         next_value = ws[f'{column}{row_number}'].value
         if next_value <= value:
